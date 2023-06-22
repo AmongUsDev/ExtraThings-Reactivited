@@ -9,9 +9,14 @@ namespace ExtraThings
         {
             if (!MeetingHud.Instance)
             {
-                __instance.text.text += $"\n<color=#00fff3>ExtraThings v{ExtraThingsPlugin.Version} created by Om3ga</color>";
-
+                __instance.text.text += $"\n<color=#00fff3>ExtraThings v{ExtraThingsPlugin.Version} created by Om3ga continued by AmongUsDev</color>";
             }
+
+             if (LobbyBehaviour.Instance)
+           {
+                 __instance.text.text += $"\n<color=#ff0000>Continued by AmongUsDev</color>";   
+                 __instance.text.UpdateFontAsset();
+           }            
         }
     }
 }
